@@ -1,0 +1,676 @@
+{
+  "database/uploads\\54c40373-8edd-4daf-ac8c-32d1e2eb018a.db": {
+    "customers": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "city",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "country",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "joined_date",
+        "type": "TEXT",
+        "pk": false
+      }
+    ],
+    "order_items": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "order_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "unit_price",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "orders": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "customer_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "order_date",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "total",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "products": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "price",
+        "type": "REAL",
+        "pk": false
+      },
+      {
+        "name": "stock",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ]
+  },
+  "database/uploads\\5417e6b9-a30d-441a-b0bc-043185bd18b8.db": {
+    "article_performance": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "word_count",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "views",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "shares",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "published_date",
+        "type": "DATE",
+        "pk": false
+      }
+    ],
+    "author_stats": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "total_articles",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "total_views",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "average_words",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ],
+    "content_categories": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "articles_published",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "average_views",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ],
+    "editorial_calendar": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "month",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "planned_articles",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "published_articles",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "on_time_rate",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "monthly_readership": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "month",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "publication_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "readers",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "engagement_rate",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "publications": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "launch_date",
+        "type": "DATE",
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "pk": false
+      }
+    ],
+    "revenue_data": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "quarter",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "source",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "amount",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "subscriber_growth": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "month",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "tier",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "count",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ]
+  },
+  "sqlite": {},
+  "database/uploads\\a40d8589-a485-4a25-816d-91f0bad55d72.db": {
+    "customers": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "city",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "country",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "joined_date",
+        "type": "TEXT",
+        "pk": false
+      }
+    ],
+    "order_items": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "order_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "unit_price",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "orders": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "customer_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "order_date",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "total",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "products": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "price",
+        "type": "REAL",
+        "pk": false
+      },
+      {
+        "name": "stock",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ]
+  },
+  "database/uploads\\2c051a8e-dfd6-4cb2-9f85-eb64bf2bb3ad.db": {
+    "customers": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "city",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "country",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "joined_date",
+        "type": "TEXT",
+        "pk": false
+      }
+    ],
+    "order_items": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "order_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "unit_price",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "orders": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "customer_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "order_date",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "total",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "products": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "price",
+        "type": "REAL",
+        "pk": false
+      },
+      {
+        "name": "stock",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ]
+  },
+  "database/uploads\\7f97c30e-64d1-420b-b508-97630d2345b2.db": {
+    "customers": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "city",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "country",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "joined_date",
+        "type": "TEXT",
+        "pk": false
+      }
+    ],
+    "order_items": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "order_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "unit_price",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "orders": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "customer_id",
+        "type": "INTEGER",
+        "pk": false
+      },
+      {
+        "name": "order_date",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "total",
+        "type": "REAL",
+        "pk": false
+      }
+    ],
+    "products": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "pk": true
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "pk": false
+      },
+      {
+        "name": "price",
+        "type": "REAL",
+        "pk": false
+      },
+      {
+        "name": "stock",
+        "type": "INTEGER",
+        "pk": false
+      }
+    ]
+  }
+}
